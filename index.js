@@ -57,7 +57,7 @@ customElements.define("my-app", class MyAppWidget extends BlocBuilder {
         </a>
         <form class="d-flex" role="search" style="width: calc(100% - 50px);">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
-            style="--bs-form-control-bg:#ffffff38;--bs-body-color:white;--bs-secondary-color:#ffffffbf;" @keyup=${this.bloc.search}>
+            style="--bs-form-control-bg:#ffffff38;--bs-body-color:white;--bs-secondary-color:#ffffffbf;box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 20%);" @keyup=${this.bloc.search}>
         </form>
       </div>
     </nav>
