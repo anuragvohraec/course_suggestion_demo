@@ -3,8 +3,11 @@
 <html style="font-size: 16px;" lang="en" class="u-responsive-xl">
 
 <head>
+  <meta charset="UTF-8">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="manifest" href="manifest.json">
 
   <meta name="keywords" content="​Free Online Courses">
   <meta name="description" content="">
@@ -44,7 +47,7 @@
                 if ('serviceWorker'in navigator) {
                     try {
                         let t;
-                        const reg = await navigator.serviceWorker.register("sw.js");
+                        const reg = await navigator.serviceWorker.register("/course_suggestion_demo/sw.js");
                         if (reg.active) {
                             res(true);
                         }
